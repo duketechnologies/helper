@@ -10,6 +10,16 @@
     "require-dev": {
         "orchestra/testbench": "^v5.19.0"
     },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0"
+        },
+        "laravel": {
+            "providers": [
+                "duke\\helper\\HelperServiceProvider\\"
+            ]
+        }
+    },
     "autoload": {
         "psr-4": {
             "duke\\helper\\": "src/"
