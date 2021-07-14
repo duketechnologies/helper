@@ -16,7 +16,7 @@
         },
         "laravel": {
             "providers": [
-                "duke\\helper\\HelperServiceProvider\\"
+                "duke\\helper\\HelperServiceProvider"
             ]
         }
     },
