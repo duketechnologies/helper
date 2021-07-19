@@ -62,7 +62,7 @@ if (! function_exists('uz_hidden_phone')) {
 
 if (! function_exists('uz_mask_phone')) {
     function uz_mask_phone() {
-        return '+998 99 999 99 99';
+        return '+\\9\\98 99 999 99 99';
     }
 }
 
@@ -128,7 +128,7 @@ if (! function_exists('az_hidden_phone')) {
 
 if (! function_exists('az_mask_phone')) {
     function az_mask_phone() {
-        return '+994 99 999 99 99';
+        return '+\\9\\94 99 999 99 99';
     }
 }
 
@@ -161,6 +161,6 @@ if (! function_exists('ge_hidden_phone')) {
 
 if (! function_exists('ge_mask_phone')) {
     function ge_mask_phone() {
-        return '+995 999 99 99 99';
+        return '+\\9\\95 999 99 99 99';
     }
 }
