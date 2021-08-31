@@ -164,3 +164,36 @@ if (! function_exists('ge_mask_phone')) {
         return '+\\9\\95 999 99 99 99';
     }
 }
+
+if (! function_exists('am_clear_phone')) {
+    function am_clear_phone($value) {
+        $phone = str_replace([' ', '-', '(', ')', '+'], '', $value);
+
+        return '+374'.substr($phone, 3, 9);
+    }
+}
+
+if (! function_exists('am_format_phone')) {
+    function am_format_phone($value) {
+        $phone = str_replace([' ', '-', '(', ')', '+'], '', $value);
+
+        return '+374 '
+            .substr($phone, 3, 2).' '
+            .substr($phone, 5, 2).' '
+            .substr($phone, 7, 2).' '
+            .substr($phone, 9, 2);
+    }
+}
+
+if (! function_exists('am_hidden_phone')) {
+    function am_hidden_phone($value) {
+        $phone = am_format_phone($value);
+        return substr_replace($phone, 'XX XX', 8, 5);
+    }
+}
+
+if (! function_exists('am_mask_phone')) {
+    function am_mask_phone() {
+        return '+374 99 99 99 99';
+    }
+}
